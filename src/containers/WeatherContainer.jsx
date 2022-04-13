@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CurrentWeather from '../components/CurrentWeather';
+import FiveDayWeather from '../components/FiveDayWeather';
 import Search from '../components/Search';
 
 const WeatherContainer = () => {
@@ -27,6 +28,7 @@ const WeatherContainer = () => {
     return (<>
     <Search callback={search}/>
     <CurrentWeather data={weatherData}/>
+    <FiveDayWeather data={weatherData}/>
     </>  );
 }
  
