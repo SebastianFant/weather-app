@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
 import WeatherContainer from './containers/WeatherContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/styles.css';
 
 function App() {
   return (

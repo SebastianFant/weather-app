@@ -1,5 +1,8 @@
 import React from 'react';
 import ForecastItem from './ForecastItem';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+
 
 const Forecast = ({data}) => {
      if(typeof data !== 'undefined' )
@@ -10,22 +13,12 @@ const Forecast = ({data}) => {
             return(<ForecastItem item={forecastItem}  />)
         });
     
-        return(<>{list}</>);
+        return(<><div class="d-flex justify-content-center"><h2>Vädret de kommande dagarna</h2></div><Container><Row>{list}</Row></Container></>);
     
 
 
 
-            /*         let list = []
-        for(let i = 0; i < data.forecast.forecastday.length; i++)
-        {
-            
-                list[i].forecast.date = data.forecast.forecastday[i].date;
-                list[i].forecast.min = data.forecast.forecastday[i].day.mintemp_c;
-                list[i].forecast.max = data.forecast.forecastday[i].day.maxtemp_c;
-                list[i].forecast.icon = data.forecast.forecastday[i].day.condition.icon;
-                list[i].forecast.text = data.forecast.forecastday[i].day.condition.text;
-            
-        } */
+
             
             
        

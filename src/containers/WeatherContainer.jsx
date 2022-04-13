@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import CurrentWeather from '../components/CurrentWeather';
-import FiveDayWeather from '../components/FiveDayWeather';
 import Forecast from '../components/Forecast';
 import Search from '../components/Search';
 
@@ -27,9 +26,13 @@ const WeatherContainer = () => {
         })
     }
 
-    return (<>
-    <Search callback={search}/>
-    <CurrentWeather data={weatherData}/>
+    return (<><br></br>
+    <div class="d-flex justify-content-center"><Search callback={search}/></div>
+    <br></br>
+    <div class="d-flex justify-content-center"><CurrentWeather data={weatherData}/></div>
+    <br></br>
+
+    
     <Forecast data={weatherData}/>
     </>  );
 }
