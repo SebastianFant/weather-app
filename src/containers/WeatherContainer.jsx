@@ -26,13 +26,13 @@ const WeatherContainer = () => {
         })
     }
 
-    return (<><br></br>
-    <div class="d-flex justify-content-center"><Search callback={search}/></div>
+    return (<>
+    <div class="d-flex justify-content-center bg-warning"><Search callback={search}/></div>
     <br></br>
     <div class="d-flex justify-content-center"><CurrentWeather data={weatherData}/></div>
     <br></br>
-
-    
+    <br></br>
+    <br></br>
     <Forecast data={weatherData}/>
     </>  );
 }

@@ -13,7 +13,8 @@ const Forecast = ({data}) => {
             return(<ForecastItem item={forecastItem}  />)
         });
     
-        return(<><div class="d-flex justify-content-center"><h2>Vädret de kommande dagarna</h2></div><Container><Row>{list}</Row></Container></>);
+        return(<><div class="d-flex justify-content-center"><h2>Vädret de kommande dagarna</h2></div>
+        <Container><Row>{list}</Row></Container></>);
     
 
 
