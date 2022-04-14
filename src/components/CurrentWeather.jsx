@@ -13,7 +13,7 @@ const CurrentWeather = ({data}) => {
             <Row sm="auto" className="justify-content-center" ><h6>{data.location.localtime}</h6></Row>
             <Row sm="auto" className="justify-content-center" ><h1>{data.current.temp_c}°C</h1><Image src={data.current.condition.icon}></Image></Row>
             <Row sm="auto" className="justify-content-center" ><h3>{data.current.condition.text}</h3></Row>
-            <Row sm="auto" className="justify-content-center" ></Row>
+            
             
             
             
